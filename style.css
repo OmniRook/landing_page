@@ -13,6 +13,8 @@ body {
 
 header {
     background: #1f2937;
+    display: flex;
+    flex-direction: column;
 }
 
 header nav ul {
@@ -22,12 +24,13 @@ header nav ul {
 
 .hero-nav {
     color: white;
-    padding: 10px;
+    padding: 15px;
 }
 
 .hero-layout {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    margin: 25px 100px;
 }
 
 .hero-content {
@@ -40,36 +43,50 @@ header nav ul {
     border: none;
     border-radius: 5px;
     color: white;
-    padding: 5px 15px; 
+    padding: 3px 20px; 
 }
 
 .hero-image {
     background: silver;
     color: white;
     height: 100px;
-    margin: 20px;
+    text-align: center;
     outline: 1px solid white;
-    padding: 10px;
-    width: 300px;
 }
+
+/* SECTION ONE */
 
 .section-one {
     background: white;
-    padding: 10px;
+    /* padding: 20px 100px; */
+    height: 250px;
 }
 
-.section-one ul li {
+.section-one h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.section-one div {
+    display: flex;
+    justify-content: center;
+    padding: 0 25px;
+}
+
+.section-one div figure {
     border-radius: 5px;
     height: 100px;
     width: 100px;
-    outline: 2px solid #3882f6;
-    padding: 5px;
+    outline: 2px solid #e5e7eb;
 }
 
-.section-one ul {
-    display: flex;
-    justify-content: space-around;
+.section-one figure figcaption {
+    color: #1f2937;
+    font-size: 10px;
+    text-align: center;
 }
+
+/* SECTION TWO */
 
 .section-two {
     background: #e5e7eb;
@@ -79,11 +96,15 @@ header nav ul {
     font-style: italic;
     text-align: center;
     padding: 40px;
+    height: 140px;
 }
+
+/* SECTION THREE */
 
 .section-three {
     background: white;
-    padding: 10px;
+    padding: 50px 80px;
+    height: 70px;
 }
 
 .action-box {
@@ -92,6 +113,8 @@ header nav ul {
     color: white;
     display: flex;
     justify-content: space-between;
+    padding: 20px 50px;
+    border-radius: 5px;
 }
 
 .action-button button {
@@ -99,13 +122,14 @@ header nav ul {
     border: none;
     border-radius: 5px;
     color: white;
-    padding: 5px 15px;
+    padding: 3px 20px;
+    outline: 1px solid;
 }
 
 footer {
     background: #1f2937;
     color: white;
     font-size: 10px;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
