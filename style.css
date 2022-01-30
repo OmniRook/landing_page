@@ -15,27 +15,56 @@ header {
     background: #1f2937;
     display: flex;
     flex-direction: column;
+    padding: 0px 100px 25px 100px; /* POSSIBLY PAGE BREAKING */
 }
 
-header nav ul {
+.hero-nav {
     display: flex;
+    flex: 1;
     justify-content: space-between;
+}
+
+.hero-nav img {
+    display: flex;
+    flex: 1;
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: 900;
+    outline: 1px solid white;
+}
+
+.hero-nav ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #e5e7eb;
 }
 
 .hero-nav {
     color: white;
-    padding: 15px;
+    padding: 15px 0px;
 }
 
 .hero-layout {
     display: flex;
     align-items: center;
-    margin: 25px 100px;
+    padding: 50px 0px;
 }
 
 .hero-content {
-    color: white;
-    padding: 10px;
+    margin-right: 25px;
+}
+
+.hero-content h1 {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-content p {
+    color: #e5e7eb;
+    font-size: 18px;;
 }
 
 .hero-button {
@@ -49,7 +78,7 @@ header nav ul {
 .hero-image {
     background: silver;
     color: white;
-    height: 100px;
+    height: 200px;
     text-align: center;
     outline: 1px solid white;
 }
@@ -58,19 +87,21 @@ header nav ul {
 
 .section-one {
     background: white;
-    /* padding: 20px 100px; */
+    padding: 25px 100px; /* POSSIBLY PAGE BREAKING */
     height: 250px;
 }
 
 .section-one h2 {
     text-align: center;
-    padding: 20px;
+    padding-bottom: 25px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
 }
 
 .section-one div {
     display: flex;
-    justify-content: center;
-    padding: 0 25px;
+    justify-content: space-evenly;
 }
 
 .section-one div figure {
@@ -90,20 +121,22 @@ header nav ul {
 
 .section-two {
     background: #e5e7eb;
+    padding: 50px 100px; /* POSSIBLY PAGE BREAKING */
+}
+
+.section-two p {
     color: #1f2937;
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
     text-align: center;
-    padding: 40px;
-    height: 140px;
 }
 
 /* SECTION THREE */
 
 .section-three {
     background: white;
-    padding: 50px 80px;
+    padding: 50px 100px; /* POSSIBLY PAGE BREAKING */
     height: 70px;
 }
 
@@ -115,6 +148,10 @@ header nav ul {
     justify-content: space-between;
     padding: 20px 50px;
     border-radius: 5px;
+}
+
+.action-text h6 {
+    font-weight: lighter;
 }
 
 .action-button button {
