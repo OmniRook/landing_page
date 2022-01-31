@@ -15,40 +15,56 @@ header {
     background: #1f2937;
     display: flex;
     flex-direction: column;
-    padding: 0px 100px 25px 100px; /* POSSIBLY PAGE BREAKING */
+    padding: 0px 100px 25px 100px;
 }
 
+/* TOP NAV */
+
 .hero-nav {
+    color: white;
     display: flex;
     flex: 1;
     justify-content: space-between;
+    padding: 15px 0px;
 }
 
-.hero-nav img {
+.hero-nav div {
+    color: #f9faf8;
     display: flex;
     flex: 1;
     font-size: 24px;
-    color: #f9faf8;
     font-weight: 900;
+}
+
+.hero-nav div a {
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
     outline: 1px solid white;
+    text-decoration: none;
+    width: 75px;  
 }
 
 .hero-nav ul {
     display: flex;
     flex: 1;
     justify-content: space-between;
-    font-size: 18px;
-    color: #e5e7eb;
 }
 
-.hero-nav {
-    color: white;
-    padding: 15px 0px;
+.hero-nav ul li a {
+    color: #e5e7eb;
+    font-size: 18px;
+    text-decoration: none;
 }
+
+/* HERO LAYOUT/CONTENT */
 
 .hero-layout {
-    display: flex;
     align-items: center;
+    display: flex;
+    justify-content: center;
     padding: 50px 0px;
 }
 
@@ -62,7 +78,7 @@ header {
     font-weight: 900;
 }
 
-.hero-content p {
+.hero-content h2 {
     color: #e5e7eb;
     font-size: 18px;;
 }
@@ -71,32 +87,36 @@ header {
     background: #3882f6;
     border: none;
     border-radius: 5px;
-    color: white;
     padding: 3px 20px; 
+}
+
+.hero-button a {
+    color: white;
+    text-decoration: none;
 }
 
 .hero-image {
     background: silver;
     color: white;
     height: 200px;
-    text-align: center;
     outline: 1px solid white;
+    text-align: center;
 }
 
 /* SECTION ONE */
 
 .section-one {
     background: white;
-    padding: 25px 100px; /* POSSIBLY PAGE BREAKING */
     height: 250px;
+    padding: 25px 100px;
 }
 
 .section-one h2 {
-    text-align: center;
-    padding-bottom: 25px;
+    color: #1f2937;
     font-size: 36px;
     font-weight: 900;
-    color: #1f2937;
+    padding-bottom: 25px;
+    text-align: center;
 }
 
 .section-one div {
@@ -107,8 +127,8 @@ header {
 .section-one div figure {
     border-radius: 5px;
     height: 100px;
-    width: 100px;
     outline: 2px solid #e5e7eb;
+    width: 100px;
 }
 
 .section-one figure figcaption {
@@ -121,33 +141,39 @@ header {
 
 .section-two {
     background: #e5e7eb;
-    padding: 50px 100px; /* POSSIBLY PAGE BREAKING */
+    padding: 50px 100px;
 }
 
-.section-two p {
+.section-two .quote {
     color: #1f2937;
     font-size: 36px;
-    font-weight: lighter;
     font-style: italic;
+    font-weight: lighter;
     text-align: center;
+}
+
+.section-two .author {
+    color: #1f2937;
+    font-weight: bold;
+    text-align: end;
 }
 
 /* SECTION THREE */
 
 .section-three {
     background: white;
-    padding: 50px 100px; /* POSSIBLY PAGE BREAKING */
     height: 70px;
+    padding: 50px 100px;
 }
 
 .action-box {
     align-items: center;
     background: #3882f6;
+    border-radius: 5px;
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-    border-radius: 5px;
 }
 
 .action-text h6 {
@@ -159,8 +185,13 @@ header {
     border: none;
     border-radius: 5px;
     color: white;
-    padding: 3px 20px;
     outline: 1px solid;
+    padding: 3px 20px;
+}
+
+.action-button a {
+    color: white;
+    text-decoration: none;
 }
 
 footer {
